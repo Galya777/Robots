@@ -1,0 +1,172 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  info [
+    "This demonstration shows a DJI Mavic 2 PRO flying over a rural area."
+    "After the drone has taken off, you can control it with the keyboard of your computer."
+  ]
+  title "DJI Mavic 2 PRO demo"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.07050665473376751 -0.9955409361549733 -0.06266622757062013 4.81348648259329
+  position 3.098460131682032 0.6099752863254642 0.561179839897096
+  near 0.2
+  followSmoothness 0.2
+}
+TexturedBackground {
+  luminosity 3
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 400 400
+  tileSize 6 6
+  appearance SandyGround {
+  }
+}
+Road {
+  translation -43.8 0.01 -9.2
+  rotation 0 1 0 1.1781
+  width 3
+  numberOfLanes 1
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    0 0 100
+    200 0 200
+  ]
+  splineSubdivision 8
+  appearance Pavement {
+    type "black stone"
+  }
+}
+Windmill {
+  translation -43.8656 0 19.8433
+  rotation 0 1 0 -1.0472
+}
+Windmill {
+  translation -44.258 0 27.3356
+  rotation 0 1 0 -1.0472
+  name "windmill(1)"
+}
+Windmill {
+  translation -46.2448 0 -30.573
+  rotation 0 1 0 -1.0472
+  name "windmill(2)"
+}
+Windmill {
+  translation -38.75 0 -23.4
+  rotation 0 1 0 -1.5708
+  name "windmill(3)"
+}
+SmallManor {
+  translation -50.35 0 -11.25
+  rotation 0 1 0 4.32
+}
+SquareManhole {
+  translation 0 -0.03 0
+}
+CardboardBox {
+  translation -0.730157 0.3 1.22891
+  rotation 0 1 0 -0.261795307179586
+}
+TeslaModel3Simple {
+  translation -41.5139 0.31 -4.34169
+  rotation 0 -1 0 -1.309
+}
+Pine {
+  translation -14.0083 0 14.4828
+  rotation 0 1 0 3.14159
+}
+Pine {
+  translation -19.6195 0 24.3783
+  rotation 0 1 0 2.87979
+  name "pine tree(1)"
+}
+Pine {
+  translation -22.0129 0 -6.20205
+  name "pine tree(3)"
+}
+Pine {
+  translation -10.6926 0 25.1339
+  name "pine tree(4)"
+}
+Pine {
+  translation -14.3441 0 -14.5621
+  name "pine tree(5)"
+}
+Pine {
+  translation -26.6328 0 7.1707
+  name "pine tree(6)"
+}
+Pine {
+  translation -9.37029 0 -14.0209
+  rotation 0 1 0 -2.618
+  name "pine tree(2)"
+}
+Forest {
+  translation 0 -0.01 0
+  shape [
+    200 200
+    200 0
+    50 0
+    50 50
+    -50 50
+    -50 -50
+    50 -50
+    50 0
+    200 0
+    200 -200
+    -200 -200
+    -200 200
+  ]
+  density 0.01
+  type "cherry tree"
+  randomSeed 1
+  maxHeight 12
+  minHeight 6
+  maxRadius 6
+  minRadius 3
+}
+Puma560 {
+  hidden position_0_0 2.5000363453355656
+  hidden rotation_1 0 1 0 2.5000363453355656
+  hidden position_1_0 -3.6983052393962352
+  hidden linearVelocity_1 2.483694636876653e-05 8.886904361424048e-06 2.583000621833173e-05
+  hidden angularVelocity_1 -4.989351195700502e-06 0.00035697433225113175 2.216673202523394e-06
+  hidden rotation_2 0 0 0.9999999999999999 3.6983052393962352
+  hidden position_2_0 2.1994115970572903
+  hidden linearVelocity_2 -0.0015199740783326094 -0.0032191661249657434 -0.0011954117723122733
+  hidden angularVelocity_2 0.011407690611167774 0.00035448766821423184 -0.01527744615170773
+  hidden rotation_3 0 0 -1 2.1994115970572903
+  hidden position_3_0 0.6479237156627757
+  hidden linearVelocity_3 -0.0033093282109802097 -0.008063982184105643 -0.0026545162558761835
+  hidden angularVelocity_3 0.007667215511396486 0.0003536826143104406 -0.010270371229142167
+  hidden rotation_4 0 1 0 0.6479237156627755
+  hidden position_4_0 -1.6526718460418977e-07
+  hidden linearVelocity_4 -0.0031332416737468827 -0.011549353369386253 -0.0026422639154358193
+  hidden angularVelocity_4 1.2494013457326891 0.1119763350560411 0.9173230951601089
+  hidden rotation_5 0 0 1 1.6593230851978133e-07
+  hidden position_5_0 2.4585270060716253e-09
+  hidden linearVelocity_5 -0.003076580028993721 -0.012316119155193999 -0.0026257944652810614
+  hidden angularVelocity_5 1.2494012762430313 0.11197611133648382 0.9173232155462705
+  hidden position_6_0 1.2329040638717311e-05
+  hidden position_6_1 1.480229616049155e-05
+  hidden linearVelocity_6 -0.0029880141229588213 -0.013511668120985419 -0.0026006912270670627
+  hidden angularVelocity_6 1.2494012575004347 0.11197587730527384 0.9173232225227317
+  hidden translation_7 -0.0070123290406387175 0.23 0
+  hidden linearVelocity_7 0.0018793019809680324 -0.008030759320375946 -0.009898975506134337
+  hidden angularVelocity_7 1.2494012574503346 0.11197587618685863 0.9173232226004452
+  hidden translation_8 0.007014802296160492 0.23 0
+  hidden linearVelocity_8 -0.007703902819015392 -0.021031511285719836 0.0047398242245242
+  hidden angularVelocity_8 1.2494012575724762 0.11197587620122261 0.9173232226833405
+  controllerArgs [
+    ""
+  ]
+}
